@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=t, initial-scale=1.0">
+    <title>textOnimg</title>
+    <style>
+       
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            
+            background-image: url("./beach-g39e9749d3_1920.png");
+           
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+
+        }
+        
+        
+@keyframes fadeInUp {
+    from { 
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  h1 {
+      margin-top: 1%;
+    opacity: 0; 
+    animation: fadeInUp 1s ease-in-out 0s forwards;}
+  
+    .first {
+       
+       animation-delay: 1s;
+     }
+     .second {
+       animation-delay: 3s;
+     }
+     .third {
+       animation-delay: 5s;
+     }
+     .fourth {
+       animation-delay: 7s;
+     }
+     .fifth {
+       animation-delay: 9s;
+     }
+     .sixth {
+       animation-delay: 11s;
+     }
+    
+
+      
+  .emphasis {
+    color: #fb6e67;
+  }
+    </style>
+</head>
+<body>
+   
+    <div class="contents">
+        <div ><!-- to create a line break, without extra css. we rely on the default state of display: block for divs -->
+            <h1 class="first">My name is <span class="emphasis">(pick a name!)</span>.<h1>
+          </div>
+          <div>
+            <h1 class="second">I do things,</h1>
+           </div>
+          <div>
+            <h1 class="third">and build things</h1>
+            <h1 class="fourth">for love of the game.</h1>
+          </div>
+          <div><!-- to create a line break, without extra css -->
+            <h1 class="fifth">I <span class="emphasis">LOVE</span> what I do,</h1>
+            <h1 class="sixth">so I work hard to do it well.</h1>
+          </div>
+    </div>
+</body>
+</html>
